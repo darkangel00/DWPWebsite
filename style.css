@@ -1,1 +1,230 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+/* body {
+  background-color: #D8BFD8;
+  color: black;
+  font-family: "Courier New";
+} -*/
+
+/*body {
+  background-image: url("https://drwhoprincess.neocities.org/images/purple-669046_1920.jpg");
+  background-size: 100vw 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  font-family: "Courier New";
+}*/
+
+
+
+/*body {     (this one is the one I had before)
+  background-image: url("https://drwhoprincess.neocities.org/images/purple-669046_1920.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Courier New";
+}*/
+
+/* body {     (This is the correct one w/out flexbox)
+  /background-image: linear-gradient(165deg, DarkSlateBlue, RebeccaPurple, SlateBlue, MediumPurple, MediumOrchid, Orchid);
+  //background-size: cover;
+  //background-repeat: no-repeat;
+  /*background-position: center;*/
+  /*background-attachment: fixed;
+  /*overflow: hidden;*/
+  /*margin: 0;
+  //padding: 0;
+  //color: white;
+  //font-family: "Courier New";
+//}*/
+
+body,html{
+  margin:0;
+  height:100vh;
+  background-image: linear-gradient(165deg, DarkSlateBlue, RebeccaPurple, SlateBlue, MediumPurple, MediumOrchid, Orchid);
+  color: white;
+  font-family: "Courier New";
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  /*background: #fafafa;*/
+  height: 100%;
+}
+
+.header{
+  /*background-color:DarkMagenta;*/
+  /* padding:1%; */
+  color:white;
+}
+.main-content{
+  flex:1;
+  /*margin:2%;*/
+  /*padding:2%;*/
+  /*background-color:white; */
+  overflow-y: scroll
+}
+.footer{
+  background-color:MediumSlateBlue;
+  padding:1%;
+  color:white;
+}
+
+
+
+
+@media screen and (max-width: 844px) {
+  body {
+    background-size: 100;
+    background-repeat: no-repeat;
+    /*overflow: hidden;*/
+    background-position: center;
+  }
+}
+
+p {
+  color: white;
+  font-family: "Courier New";
+  margin-left: auto; 
+  margin-right: auto;
+  width: 90%;
+}
+
+ul {
+  margin-left: auto; 
+  margin-right: auto;
+  width: 90%;
+}
+
+li {
+  margin-left: auto; 
+  margin-right: auto;
+  width: 90%;
+}
+
+h1 {
+  margin-left: auto; 
+  margin-right: auto;
+  width: 90%;
+}
+
+a:link {
+  color: coral;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+/*footer { (original footer)
+  //position: absolute;
+  //left: 0;
+  //bottom: 0px;
+  //width: 100%;
+ // background-color: mediumslateblue;
+ // color: white;
+  //text-align: center;
+}*/
+
+/* Scrollable container */
+.table-container {
+  border: 1px transparent;
+  border-bottom: none;
+  overflow: auto; /* Enables both horizontal and vertical scrolling */
+  /*height: 400px; /* Limits table height for vertical scrolling */
+  /* Apply CSS Flexbox */
+    display: flex;
+
+    /* Center items horizontally */
+    justify-content: center;
+
+    /* Center items vertically */
+    /*align-items - center;*/
+}
+
+/* Table layout */
+.table {
+  border-collapse: collapse;
+  width: 90%;
+  table-layout: fixed; /* Ensures consistent column widths */
+}
+
+/* Table cells and headers */
+.table th,
+.table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+.center {
+  margin-left: auto; 
+  margin-right: auto;
+  width: 90%;
+}
+
+/* Add higher z-index for header */
+.table th:nth-child(1) {
+  z-index: 6;
+}
+
+/* Sticky header */
+.table th {
+  background-color: #1e3a8a;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  position: sticky;
+  top: 0; /* Makes the header stick to the top */
+  z-index: 2; /* Keeps the header above the table body */
+}
+
+/* Styling for table body */
+.table td {
+  font-size: 14px;
+  color: white;
+}
+
+/* Zebra striping for rows */
+.table tr:nth-child(odd) {
+  background-color: #8966b3;
+  color: white;
+}
+
+/* Zebra striping for rows */
+.table tr:nth-child(even) {
+  background-color: #9b72cc;
+  color: white;
+}
+
+/* No data row styling */
+.no-data {
+  text-align: center;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
 
